@@ -16,8 +16,8 @@ const keysAvaiable = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]
 const directions = ["turnUp", "turnLeft", "turnRight", "turnDown"];
 // array com strings que definem as direções possiveis 
 window.addEventListener("keydown", (event) => {
-    const key  = event.key;
-
+    const key  = event.key; // Esse método ele espera que um evento ocorra para poder começar a rodar os comandos abaixo
+                            // nesse caso é um keybord event
     const keyPressedAvaiable =  keysAvaiable.some((currentKey) => {
         return currentKey === key; // essa função será ativada sempre que algum comando da const keysAvaible for acionado. Propriedade do some()
     })
